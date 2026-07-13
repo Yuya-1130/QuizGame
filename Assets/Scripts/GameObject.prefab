@@ -1,0 +1,119 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &5045613359561022060
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4662238248478957449}
+  - component: {fileID: 2938678073201847724}
+  - component: {fileID: 1892894916493136563}
+  m_Layer: 0
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4662238248478957449
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5045613359561022060}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 825.70264, y: 464.79214, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2938678073201847724
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5045613359561022060}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7fb73a58d0f3464448ce0d6f04e810b7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::QuizSceneController
+  roundText: {fileID: 0}
+  questionText: {fileID: 0}
+  chanceText: {fileID: 0}
+  optionButtons:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  optionTexts:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+--- !u!114 &1892894916493136563
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5045613359561022060}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2b79d81ed91cb3b43a1603947a60c188, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SimpleGameManager
+  quizList:
+  - text: "\u65E5\u672C\u3067\u4E00\u756A\u9AD8\u3044\u5C71\u306F\u5BCC\u58EB\u5C71\u3067\u3059\u304C\u3001\u4E8C\u756A\u76EE\u306B\u9AD8\u3044\u5C71\u306F\u4F55\u3067\u3057\u3087\u3046\uFF1F"
+    options:
+    - "\u5317\u5CB3"
+    - "\u5965\u7A42\u9AD8\u5CB3"
+    - "\u9593\u30CE\u5CB3"
+    - "\u69CD\u30F6\u5CB3"
+    - "\u6D45\u9593\u5C71"
+    correctAnswerIndex: 0
+  - text: "\u592A\u967D\u7CFB\u306E\u4E2D\u3067\u3001\u592A\u967D\u306B\u6700\u3082\u8FD1\u3044\u5834\u6240\u3092\u516C\u8EE2\u3057\u3066\u3044\u308B\u60D1\u661F\u306F\u4F55\u3067\u3057\u3087\u3046\uFF1F"
+    options:
+    - "\u91D1\u661F"
+    - "\u6728\u661F"
+    - "\u6C34\u661F"
+    - "\u91D1\u661F"
+    - "\u571F\u661F"
+    correctAnswerIndex: 2
+  - text: "\u30D5\u30E9\u30F3\u30B9\u306E\u9996\u90FD\u3067\u3042\u308A\u3001\u30A8\u30C3\u30D5\u30A7\u30EB\u5854\u3084\u30EB\u30FC\u30D6\u30EB\u7F8E\u8853\u9928\u304C\u3042\u308B\u90FD\u5E02\u306F\u3069\u3053\uFF1F"
+    options:
+    - "\u30ED\u30F3\u30C9\u30F3"
+    - "\u30D9\u30EB\u30EA\u30F3"
+    - "\u30DE\u30C9\u30EA\u30FC\u30C9"
+    - "\u30D1\u30EA"
+    - "\u30ED\u30FC\u30DE"
+    correctAnswerIndex: 3
+  - text: "\u6226\u56FD\u6642\u4EE3\u306B\u300C\u672C\u80FD\u5BFA\u306E\u5909\u300D\u3092\u8D77\u3053\u3057\u3001\u7E54\u7530\u4FE1\u9577\u3092\u88CF\u5207\u3063\u305F\u6B66\u5C06\u306F\u8AB0\u3067\u3057\u3087\u3046\uFF1F"
+    options:
+    - "\u8C4A\u81E3\u79C0\u5409"
+    - "\u660E\u667A\u5149\u79C0"
+    - "\u5FB3\u5DDD\u5BB6\u5EB7"
+    - "\u6B66\u7530\u4FE1\u7384"
+    - "\u77F3\u7530\u4E09\u6210"
+    correctAnswerIndex: 1
+  - text: "\u82F1\u8A9E\u3067\u300C12\u6708\u300D\u3092\u610F\u5473\u3059\u308B\u5358\u8A9E\u306F\u3001\u6B21\u306E\u3046\u3061\u3069\u308C\u3067\u3057\u3087\u3046\uFF1F"
+    options:
+    - October
+    - September
+    - November
+    - January
+    - December
+    correctAnswerIndex: 4
+  currentRound: 1
+  totalPoints: 0
+  totalOpenedLetters: 0
+  currentMissCount: 0
