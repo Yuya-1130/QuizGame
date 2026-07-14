@@ -2,8 +2,12 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement; // シーン切り替えに必須
 
+
 public class SimpleGameManager : MonoBehaviour
 {
+    public List<int> openedLetterIndices = new List<int>();
+    
+
     // どこからでもデータを参照できるようにするための仕組み（シングルトン）
     public static SimpleGameManager instance;
 
@@ -54,7 +58,7 @@ public class SimpleGameManager : MonoBehaviour
         {
             int[] pointsTable = { 30, 20, 10 };
             totalPoints += pointsTable[currentMissCount];
-            totalOpenedLetters += 2; // 正解で2文字解放
+            totalOpenedLetters += 5; // 正解で2文字解放
 
             currentRound++;
             currentMissCount = 0;

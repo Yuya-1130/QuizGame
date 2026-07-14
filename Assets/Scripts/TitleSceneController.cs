@@ -1,16 +1,16 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class TitleSceneController : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    // スタートボタンから呼ぶ
+    public void OnStartButtonClick()
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        if (SimpleGameManager.instance != null)
+        {
+            SimpleGameManager.instance.ResetGameData();
+        }
+        // 「道中クイズシーン」へ遷移（※ビルド設定のシーン名と合わせてください）
+        SceneManager.LoadScene("QuizScene");
     }
 }

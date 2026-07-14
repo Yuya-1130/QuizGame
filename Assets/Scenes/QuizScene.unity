@@ -2287,6 +2287,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1892894916493136563, guid: 327ea11276756144e89d60583174c495, type: 3}
+      propertyPath: quizList.Array.data[4].text
+      value: "\u82F1\u8A9E\u3067\u300C12\u6708\u300D\u3092\u610F\u5473\u3059\u308B\u5358\u8A9E\u306F\u3001\u3064\u304E\u306E\u3046\u3061\u3069\u308C\u3067\u3057\u3087\u3046\uFF1F"
+      objectReference: {fileID: 0}
     - target: {fileID: 2938678073201847724, guid: 327ea11276756144e89d60583174c495, type: 3}
       propertyPath: roundText
       value: 
