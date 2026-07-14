@@ -40,6 +40,20 @@ public class SimpleGameManager : MonoBehaviour
         }
     }
 
+    public void ResetGame()
+    {
+        currentRound = 1;         // 1問目に戻す
+        totalPoints = 0;          // ポイントを0にする
+        totalOpenedLetters = 0;   // 解放文字数を0にする
+        currentMissCount = 0;     // ミスカウントを0にする
+
+        // 新しく作ったランダム虫食いのリストも綺麗に空っぽにする！
+        if (openedLetterIndices != null)
+        {
+            openedLetterIndices.Clear();
+        }
+    }
+
     // ■ 最初からやり直す処理
     public void ResetGameData()
     {
